@@ -106,7 +106,8 @@
 let arr = [1, 3, 5];
 let dates = [];
 const week = [];
-function getWeek() {
+
+function getDates() {
    let d = new Date(temp)
    let date = d.getDate();
    let todayDay = d.getDay()
@@ -131,18 +132,6 @@ function getWeek() {
 
       console.log(dates);
    }
-}
-
-
-const getDates = (days) => {
-   const weekDates = getWeek();
-
-   // for (const day of days) {
-   //    dates.push(weekDates[day])
-   // }
-
-   // console.log(dates);
-   // return dates
 }
 
 getDates(arr);
